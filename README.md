@@ -15,3 +15,11 @@ stow dist
 ```sh
 sxiv *.jpg
 ```
+
+## Keybindings
+
+### External commands
+
+> trigger with <kbd>Ctrl</kbd> + <kbd>x</kbd>
+
+- <kbd>y</kbd> - copy image to clipboard

@@ -1,0 +1,13 @@
+#!/bin/env sh
+while read -r file
+do
+  fullpath="$(pwd)/$file"
+  case "$1" in
+    "y")
+      printf %s "$file" | xclip -selection clipboard &&
+      notify-send "$file copied to clipboard" & ;;
+    "Y")
+      printf %s "$fullpath" | xclip -selection clipboard &&
+      notify-send "$fullpath copied to clipboard" & ;;
+  esac
+done
